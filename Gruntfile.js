@@ -10,7 +10,7 @@ module.exports = function(grunt) {
           './public/assets/bower/jquery/dist/jquery.js',
           './public/assets/bower/bootstrap/dist/js/bootstrap.js',
         ],
-        dest: './public/assets/js/javascript.js',
+        dest: './public/assets/js/app.js',
       },
     },
     cssmin: {
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
         src: [
           './public/assets/bower/bootstrap/dist/css/bootstrap.css',
         ],
-        dest: './public/assets/css/stylesheet.css'
+        dest: './public/assets/css/app.css'
       }
     },
     uglify: {
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
       },
       app: {
         files: {
-          './public/assets/js/javascript.js': './public/assets/js/javascript.js',
+          './public/assets/js/app.js': './public/assets/js/app.js',
         }
       },
     },
